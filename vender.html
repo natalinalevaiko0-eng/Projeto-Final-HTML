@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre seu veículo para vender na Carro Fácil.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Vender meu veículo | Carro Fácil</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a class="identidade" href="index.html" aria-label="Carro Fácil - Página inicial">
+            <span class="logo">
+                <img src="img/Gemini_Generated_Image_7qf4hd7qf4hd7qf4sitecarro.jpg" alt="">
+            </span>
+            <span class="nome-empresa"><span>Carro</span> <span>Fácil</span></span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Home</a>
+            <a href="comprar.html">Comprar</a>
+            <a class="menuativo" href="vender.html" aria-current="page">Vender</a>
+            <a href="promoções.html">Promoções</a>
+            <a href="alugar.html">Alugar</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="revisão.html">Revisão</a>
+            <a href="lojas.html">Lojas</a>
+            <a href="financiar.html">Financiar</a>
+            <a href="entrar.html">Entrar</a>
+            <a href="https://wa.me/5541988227375" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </nav>
+    </header>
+
+    <main class="pagina-venda">
+        <section class="cabecalho-venda" aria-labelledby="titulo-venda">
+            <p class="sobretitulo">ANUNCIE SEU VEÍCULO</p>
+            <h1 id="titulo-venda">Venda seu carro com a Carro Fácil</h1>
+            <p>Preencha as informações do veículo. Nossa equipe vai analisar o anúncio e entrar em contato.</p>
+        </section>
+
+
+        <form class="formulario-venda" id="formulario-venda" enctype="multipart/form-data">
+            <section class="bloco-formulario-venda" aria-labelledby="titulo-veiculo">
+                <p class="sobretitulo">PARTE 1</p>
+                <h2 id="titulo-veiculo">Informações do veículo</h2>
+
+                <div class="grade-campos-venda">
+                    <div class="campo-venda">
+                        <label for="marca">Marca</label>
+                        <input type="text" id="marca" placeholder="Ex.: Ford" required>
+                    </div>
+
+                    <div class="campo-venda">
+                        <label for="modelo">Modelo</label>
+                        <input type="text" id="modelo" placeholder="Ex.: Fusion" required>
+                    </div>
+
+                    <div class="campo-venda">
+                        <label for="ano">Ano</label>
+                        <input type="number" id="ano" min="1900" max="2027" placeholder="Ex.: 2020" required>
+                    </div>
+
+                    <div class="campo-venda">
+                        <label for="quilometragem">Quilometragem</label>
+                        <input type="number" id="quilometragem" min="0" placeholder="Ex.: 45000" required>
+                    </div>
+
+                    <div class="campo-venda">
+                        <label for="cor">Cor</label>
+                        <input type="text" id="cor" placeholder="Ex.: Prata" required>
+                    </div>
+
+                    <div class="campo-venda">
+                        <label for="cambio">Câmbio</label>
+                        <select id="cambio" required>
+                            <option value="">Escolha uma opção</option>
+                            <option>Manual</option>
+                            <option>Automático</option>
+                            <option>Automatizado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="campo-venda campo-largo-venda">
+                    <label for="preco">Preço desejado</label>
+                    <input type="number" id="preco" min="0" step="0.01" placeholder="Ex.: 55000" required>
+                </div>
+
+                <div class="campo-venda campo-largo-venda">
+                    <label for="descricao-veiculo">Descrição do veículo</label>
+                    <textarea id="descricao-veiculo" rows="5" placeholder="Conte detalhes importantes, como acessórios, revisões e estado do carro." required></textarea>
+                </div>
+            </section>
+
+            <section class="bloco-formulario-venda" aria-labelledby="titulo-fotos">
+                <p class="sobretitulo">PARTE 2</p>
+                <h2 id="titulo-fotos">Fotos do veículo</h2>
+                <p class="ajuda-venda">Escolha fotos nítidas da frente, traseira, laterais e interior do veículo.</p>
+
+
+                <label class="area-upload" for="fotos">
+                    <span class="icone-upload" aria-hidden="true">📷</span>
+                    <strong>Adicionar fotos</strong>
+                    <small>JPG ou PNG. Você pode escolher várias imagens.</small>
+                </label>
+                <input class="input-fotos" type="file" id="fotos" accept="image/png, image/jpeg" multiple>
+
+
+                <div class="preview-fotos" id="preview-fotos" aria-live="polite"></div>
+            </section>
+
+            <section class="bloco-formulario-venda" aria-labelledby="titulo-contato-venda">
+                <p class="sobretitulo">PARTE 3</p>
+                <h2 id="titulo-contato-venda">Seus dados de contato</h2>
+
+                <div class="grade-campos-venda">
+                    <div class="campo-venda">
+                        <label for="nome-vendedor">Nome completo</label>
+                        <input type="text" id="nome-vendedor" autocomplete="name" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="campo-venda">
+                        <label for="telefone-vendedor">Telefone</label>
+                        <input type="tel" id="telefone-vendedor" autocomplete="tel" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="campo-venda campo-largo-venda">
+                        <label for="email-vendedor">E-mail</label>
+                        <input type="email" id="email-vendedor" autocomplete="email" placeholder="voce@exemplo.com" required>
+                    </div>
+                </div>
+
+                <label class="termo-venda">
+                    <input type="checkbox" required>
+                    <span>Confirmo que as informações do veículo são verdadeiras.</span>
+                </label>
+
+                <button class="botao-formulario" type="submit">Enviar veículo para análise</button>
+                <p class="mensagem-formulario" id="mensagem-venda" aria-live="polite"></p>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <span>Carro Fácil</span>
+        <span>Seu caminho para um novo carro.</span>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

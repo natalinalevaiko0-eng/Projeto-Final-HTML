@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agende a revisão do seu carro em garantia após três meses da compra.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Revisão em garantia | Carro Fácil</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a class="identidade" href="index.html" aria-label="Carro Fácil - Página inicial">
+            <span class="logo">
+                <img src="img/Gemini_Generated_Image_7qf4hd7qf4hd7qf4sitecarro.jpg" alt="">
+            </span>
+            <span class="nome-empresa"><span>Carro</span> <span>Fácil</span></span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Home</a>
+            <a href="comprar.html">Comprar</a>
+            <a href="vender.html">Vender</a>
+            <a href="promoções.html">Promoções</a>
+            <a href="alugar.html">Alugar</a>
+            <a href="suporte.html">Suporte</a>
+            <a class="menuativo" href="revisão.html" aria-current="page">Revisão</a>
+            <a href="lojas.html">Lojas</a>
+            <a href="financiar.html">Financiar</a>
+            <a href="entrar.html">Entrar</a>
+            <a href="https://wa.me/5541988227375" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </nav>
+    </header>
+
+    <main class="pagina-revisao">
+        <section class="cabecalho-revisao" aria-labelledby="titulo-revisao">
+            <p class="sobretitulo">CUIDADO PÓS-VENDA</p>
+            <h1 id="titulo-revisao">Seu carro merece continuar bem cuidado</h1>
+            <p>Os carros vendidos pela Carro Fácil que ainda estão na garantia podem fazer uma revisão após 3 meses da compra.</p>
+            <a class="botao-principal botao-revisao" href="#agendar-revisao">Agendar minha revisão</a>
+        </section>
+
+        <section class="resumo-revisao" aria-labelledby="titulo-direito">
+            <div>
+                <p class="sobretitulo">QUEM TEM DIREITO?</p>
+                <h2 id="titulo-direito">Revisão para carros em garantia</h2>
+                <p>Você pode solicitar o atendimento se comprou o carro pela Carro Fácil, o veículo ainda estiver dentro do prazo de garantia e já tiverem passado 3 meses da venda.</p>
+            </div>
+
+            <div class="lista-requisitos">
+                <div class="requisito-revisao">
+                    <span>1</span>
+                    <strong>Compra pela Carro Fácil</strong>
+                    <small>Tenha os dados da compra ou do veículo.</small>
+                </div>
+                <div class="requisito-revisao">
+                    <span>2</span>
+                    <strong>3 meses completos</strong>
+                    <small>A revisão é solicitada depois desse período.</small>
+                </div>
+                <div class="requisito-revisao">
+                    <span>3</span>
+                    <strong>Garantia vigente</strong>
+                    <small>O carro precisa continuar dentro da garantia.</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="itens-revisao" aria-labelledby="titulo-verificado">
+            <div class="titulo-secao">
+                <div>
+                    <p class="sobretitulo">CHECK-UP DO VEÍCULO</p>
+                    <h2 id="titulo-verificado">O que será verificado?</h2>
+                </div>
+            </div>
+
+            <div class="grade-itens-revisao">
+                <article>
+                    <span aria-hidden="true">🔧</span>
+                    <h3>Motor e fluidos</h3>
+                    <p>Conferência do óleo, filtros e níveis dos principais fluidos.</p>
+                </article>
+                <article>
+                    <span aria-hidden="true">🛞</span>
+                    <h3>Pneus e freios</h3>
+                    <p>Verificação do desgaste, calibragem, pastilhas e sistema de freios.</p>
+                </article>
+                <article>
+                    <span aria-hidden="true">💡</span>
+                    <h3>Parte elétrica</h3>
+                    <p>Teste de bateria, luzes, painel e equipamentos básicos.</p>
+                </article>
+                <article>
+                    <span aria-hidden="true">✅</span>
+                    <h3>Orientações finais</h3>
+                    <p>Você recebe o resultado da revisão e as próximas recomendações.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="agendamento-revisao" id="agendar-revisao" aria-labelledby="titulo-agendamento">
+            <div>
+                <p class="sobretitulo">SOLICITE SEU HORÁRIO</p>
+                <h2 id="titulo-agendamento">Agende uma revisão</h2>
+                <p>Preencha os dados abaixo. Nossa equipe confirmará o melhor dia e horário para você.</p>
+                <p class="observacao-revisao"><strong>Importante:</strong> a confirmação da garantia e da data da venda será feita pela equipe antes do agendamento.</p>
+            </div>
+
+            <form class="formulario-revisao" id="formulario-revisao">
+                <label for="nome-revisao">Nome completo</label>
+                <input type="text" id="nome-revisao" placeholder="Seu nome" autocomplete="name" required>
+
+                <label for="email-revisao">E-mail</label>
+                <input type="email" id="email-revisao" placeholder="voce@exemplo.com" autocomplete="email" required>
+
+                <label for="carro-revisao">Modelo do carro</label>
+                <input type="text" id="carro-revisao" placeholder="Ex.: Sedã prata" required>
+
+                <label for="data-venda">Data da venda</label>
+                <input type="date" id="data-venda" required>
+
+                <label for="observacao-revisao">Observação (opcional)</label>
+                <textarea id="observacao-revisao" rows="3" placeholder="Conte se percebeu algum problema"></textarea>
+
+                <button class="botao-formulario" type="submit">Solicitar agendamento</button>
+                <p class="mensagem-formulario" id="mensagem-revisao" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="duvidas-revisao" aria-labelledby="titulo-duvidas-revisao">
+            <h2 id="titulo-duvidas-revisao">Dúvidas rápidas</h2>
+            <details>
+                <summary>A revisão é gratuita?</summary>
+                <p>A equipe confirmará as condições da garantia antes do atendimento. Serviços fora da cobertura serão informados antes de qualquer cobrança.</p>
+            </details>
+            <details>
+                <summary>O que devo levar?</summary>
+                <p>Leve um documento, os dados da compra e, se possível, o manual e os registros de manutenção do veículo.</p>
+            </details>
+            <details>
+                <summary>Onde tiro outras dúvidas?</summary>
+                <p>Acesse a página de <a href="suporte.html">Suporte</a> para falar com a equipe da Carro Fácil.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <span>Carro Fácil</span>
+        <span>Seu caminho para um novo carro.</span>
+    </footer>
+
+</body>
+
+</html>

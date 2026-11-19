@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre na sua conta Carro Fácil.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Entrar | Carro Fácil</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a class="identidade" href="index.html" aria-label="Carro Fácil - Página inicial">
+            <span class="logo">
+                <img src="img/Gemini_Generated_Image_7qf4hd7qf4hd7qf4sitecarro.jpg" alt="">
+            </span>
+            <span class="nome-empresa"><span>Carro</span> <span>Fácil</span></span>
+        </a>
+
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Home</a>
+            <a href="comprar.html">Comprar</a>
+            <a href="vender.html">Vender</a>
+            <a href="promoções.html">Promoções</a>
+            <a href="alugar.html">Alugar</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="revisão.html">Revisão</a>
+            <a href="lojas.html">Lojas</a>
+            <a href="financiar.html">Financiar</a>
+            <a class="menuativo" href="entrar.html" aria-current="page">Entrar</a>
+            <a href="https://wa.me/5541988227375" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </nav>
+    </header>
+
+    <main class="pagina-entrar">
+
+        <section class="cartao-autenticacao" id="area-login" aria-labelledby="titulo-login">
+            <p class="sobretitulo">ÁREA DO CLIENTE</p>
+            <h1 id="titulo-login">Entre na sua conta</h1>
+            <p class="texto-ajuda">Acesse seus anúncios, favoritos e negociações de veículos.</p>
+
+
+            <form id="formulario-login">
+                <div class="campo-formulario">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="voce@exemplo.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        minlength="6"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <div class="opcoes-login">
+                    <label class="lembrar-me">
+                        <input type="checkbox" id="lembrar-me" name="lembrar-me">
+                        <span>Lembrar-me</span>
+                    </label>
+
+
+                    <a href="suporte.html#recuperar-senha">Esqueci minha senha</a>
+                </div>
+
+                <button class="botao-formulario" type="submit">Entrar</button>
+                <p class="mensagem-formulario" id="mensagem-login" aria-live="polite"></p>
+            </form>
+
+            <div class="separador"><span>ou</span></div>
+
+            <p class="criar-conta">
+                Ainda não tem uma conta?
+                <a href="suporte.html">Fale com o suporte</a>
+            </p>
+        </section>
+
+
+        <section class="cartao-autenticacao usuario-logado" id="area-usuario" aria-labelledby="titulo-logado" hidden>
+            <p class="sobretitulo">LOGIN REALIZADO</p>
+            <h1 id="titulo-logado">Olá, <span id="nome-usuario">cliente</span>!</h1>
+            <p class="texto-ajuda">Você está conectado à sua conta Carro Fácil.</p>
+
+            <div class="resumo-conta">
+                <strong>Sua conta está ativa</strong>
+                <span id="email-usuario"></span>
+            </div>
+
+            <button class="botao-formulario botao-sair" id="botao-sair" type="button">Sair da conta</button>
+            <p class="mensagem-formulario" id="mensagem-logout" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <span>Carro Fácil</span>
+        <span>Encontre seu próximo carro com facilidade.</span>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

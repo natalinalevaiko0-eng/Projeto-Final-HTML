@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simule o financiamento do seu carro na Carro Fácil.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Financiar carro | Carro Fácil</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a class="identidade" href="index.html" aria-label="Carro Fácil - Página inicial">
+            <span class="logo">
+                <img src="img/Gemini_Generated_Image_7qf4hd7qf4hd7qf4sitecarro.jpg" alt="">
+            </span>
+            <span class="nome-empresa"><span>Carro</span> <span>Fácil</span></span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Home</a>
+            <a href="comprar.html">Comprar</a>
+            <a href="vender.html">Vender</a>
+            <a href="promoções.html">Promoções</a>
+            <a href="alugar.html">Alugar</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="revisão.html">Revisão</a>
+            <a href="lojas.html">Lojas</a>
+            <a class="menuativo" href="financiar.html" aria-current="page">Financiar</a>
+            <a href="entrar.html">Entrar</a>
+            <a href="https://wa.me/5541988227375" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </nav>
+    </header>
+
+    <main class="pagina-financiamento">
+        <section class="cabecalho-financiamento" aria-labelledby="titulo-financiamento">
+            <p class="sobretitulo">ESCOLHA SEU CARRO</p>
+            <h1 id="titulo-financiamento">Financie seu próximo carro</h1>
+            <p>Escolha um veículo, compare as opções de financiamento e faça uma simulação simples.</p>
+        </section>
+
+
+        <section class="carros-financiamento" aria-labelledby="titulo-carros-financiamento">
+            <div class="titulo-secao">
+                <h2 id="titulo-carros-financiamento">Carros em destaque</h2>
+                <a class="link-simples" href="comprar.html">Ver todos</a>
+            </div>
+
+            <div class="grade-carros-financiamento">
+                <article class="card-carro-financiamento">
+                    <img src="img/veiculo-01-estudio.png" alt="Fusion 2008 prata">
+                    <h3>Fusion 2008</h3>
+                    <p>R$ 45.000,00</p>
+                </article>
+                <article class="card-carro-financiamento">
+                    <img src="img/veiculo-02-estudio.png" alt="Polo 2019 cinza">
+                    <h3>Polo 2019</h3>
+                    <p>R$ 55.000,00</p>
+                </article>
+                <article class="card-carro-financiamento">
+                    <img src="img/veiculo-05-estudio.png" alt="Tera 2023 vermelho">
+                    <h3>Tera 2023</h3>
+                    <p>R$ 96.000,00</p>
+                </article>
+                <article class="card-carro-financiamento">
+                    <img src="img/veiculo-07-estudio.png" alt="HB20 2024 prata">
+                    <h3>HB20 2024</h3>
+                    <p>R$ 85.000,00</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="tipos-financiamento" aria-labelledby="titulo-tipos">
+            <div class="titulo-secao">
+                <h2 id="titulo-tipos">Tipos de financiamento</h2>
+            </div>
+
+            <div class="grade-tipos-financiamento">
+                <article>
+                    <span aria-hidden="true">🏦</span>
+                    <h3>CDC</h3>
+                    <p>Você compra o carro e paga parcelas fixas ao banco ou financeira.</p>
+                    <strong>Taxa exemplo: 1,49% ao mês</strong>
+                </article>
+                <article>
+                    <span aria-hidden="true">🔑</span>
+                    <h3>Leasing</h3>
+                    <p>A financeira compra o carro e você usa o veículo pagando parcelas.</p>
+                    <strong>Taxa exemplo: 1,29% ao mês</strong>
+                </article>
+                <article>
+                    <span aria-hidden="true">👥</span>
+                    <h3>Consórcio</h3>
+                    <p>Você participa de um grupo e pode receber o carro por sorteio ou lance.</p>
+                    <strong>Sem juros, com taxa administrativa</strong>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="simulador-financiamento" aria-labelledby="titulo-simulador">
+            <div>
+                <p class="sobretitulo">SIMULAÇÃO</p>
+                <h2 id="titulo-simulador">Veja uma estimativa de parcelas</h2>
+                <p>Escolha o carro, o tipo de financiamento, a entrada e o prazo.</p>
+                <p class="aviso-financiamento"><strong>Atenção:</strong> esta é uma estimativa. A taxa real depende da análise de crédito, do banco e do contrato.</p>
+            </div>
+
+            <form class="formulario-financiamento" id="formulario-financiamento">
+                <label for="carro-financiado">Carro</label>
+                <select id="carro-financiado" required>
+                    <option value="45000">Fusion 2008 — R$ 45.000,00</option>
+                    <option value="55000">Polo 2019 — R$ 55.000,00</option>
+                    <option value="96000">Tera 2023 — R$ 96.000,00</option>
+                    <option value="85000">HB20 2024 — R$ 85.000,00</option>
+                </select>
+
+                <label for="tipo-financiamento">Tipo de financiamento</label>
+                <select id="tipo-financiamento" required>
+                    <option value="cdc">CDC — 1,49% ao mês</option>
+                    <option value="leasing">Leasing — 1,29% ao mês</option>
+                    <option value="consorcio">Consórcio — taxa administrativa de 18%</option>
+                </select>
+
+                <div class="campos-simulador">
+                    <div>
+                        <label for="entrada">Entrada</label>
+                        <input type="number" id="entrada" value="10000" min="0" step="500" required>
+                    </div>
+                    <div>
+                        <label for="parcelas">Parcelas</label>
+                        <select id="parcelas">
+                            <option value="24">24 meses</option>
+                            <option value="36" selected>36 meses</option>
+                            <option value="48">48 meses</option>
+                            <option value="60">60 meses</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="botao-formulario" type="submit">Calcular parcelas</button>
+                <div class="resultado-financiamento" id="resultado-financiamento" aria-live="polite">
+                    <span>Parcela estimada</span>
+                    <strong>Escolha as opções e calcule</strong>
+                </div>
+            </form>
+        </section>
+
+        <section class="como-funciona-financiamento" aria-labelledby="titulo-como-funciona">
+            <h2 id="titulo-como-funciona">Como funciona?</h2>
+            <ol>
+                <li><strong>Escolha o carro e faça a simulação.</strong> Veja uma ideia do valor das parcelas.</li>
+                <li><strong>Envie seus dados.</strong> A financeira analisa sua renda e seu histórico de crédito.</li>
+                <li><strong>Compare a proposta.</strong> Confira entrada, juros, número de parcelas e valor total.</li>
+                <li><strong>Assine o contrato.</strong> Depois da aprovação, o carro é liberado conforme as regras do contrato.</li>
+            </ol>
+        </section>
+
+        <section class="informacoes-complementares" aria-labelledby="titulo-informacoes-financiamento">
+            <h2 id="titulo-informacoes-financiamento">Informações importantes</h2>
+            <ul>
+                <li>Uma entrada maior normalmente diminui o valor das parcelas.</li>
+                <li>Um prazo maior pode reduzir a parcela, mas aumenta o valor total pago.</li>
+                <li>Leia o contrato e confira o custo efetivo total antes de assinar.</li>
+                <li>A aprovação e as taxas dependem da análise da instituição financeira.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <span>Carro Fácil</span>
+        <span>Seu caminho para um novo carro.</span>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

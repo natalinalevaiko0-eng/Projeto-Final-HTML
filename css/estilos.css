@@ -1,0 +1,1068 @@
+:root {
+  --azul-escuro: #0b1f4d;
+  --azul: #4174e3;
+  --azul-claro: #e9f1ff;
+  --texto: #1e293b;
+  --fundo: #f3f7fc;
+  --branco: #fff;
+  --borda: #dbe4f0;
+  --vermelho: #b42318;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
+  color: var(--texto);
+  background: var(--fundo);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px clamp(18px, 4vw, 64px);
+  background: var(--branco);
+  border-bottom: 1px solid var(--borda);
+}
+
+.identidade {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo {
+  width: clamp(52px, 6vw, 72px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.logo img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.nome-empresa {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nome-empresa span:first-child {
+  color: var(--azul-escuro);
+}
+
+.nome-empresa span:last-child {
+  color: #2497dc;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+nav a {
+  padding: 9px 10px;
+  border-radius: 7px;
+  color: #334155;
+  font-size: clamp(10px, 0.95vw, 14px);
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a.menuativo {
+  color: var(--azul-escuro);
+  background: var(--azul-claro);
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(18px, 4vw, 64px) 40px;
+}
+
+.apresentacao,
+.cabecalho-lojas,
+.cabecalho-suporte,
+.cabecalho-revisao,
+.cabecalho-venda,
+.cabecalho-promocoes,
+.cabecalho-aluguel,
+.cabecalho-financiamento,
+.cabecalho-comprar {
+  min-height: 220px;
+  margin: 28px 0 42px;
+  padding: clamp(28px, 5vw, 56px);
+  border-radius: 18px;
+  color: var(--branco);
+  background: linear-gradient(105deg, rgba(11, 31, 77, 0.96), rgba(25, 82, 169, 0.84)),
+    url("../img/veiculo-01-estudio.png") center / cover;
+  box-shadow: 0 14px 34px rgba(15, 42, 87, 0.18);
+}
+
+.apresentacao {
+  display: grid;
+  align-items: center;
+}
+
+.apresentacao > div,
+.cabecalho-lojas,
+.cabecalho-suporte,
+.cabecalho-revisao,
+.cabecalho-venda,
+.cabecalho-promocoes,
+.cabecalho-aluguel,
+.cabecalho-financiamento,
+.cabecalho-comprar {
+  max-width: 1180px;
+}
+
+.sobretitulo {
+  margin: 0 0 8px;
+  color: #5aa7ee;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+.apresentacao .sobretitulo {
+  color: #a9dcff;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--azul-escuro);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  color: #547dc4;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(25px, 3vw, 34px);
+}
+
+.apresentacao p:not(.sobretitulo) {
+  max-width: 510px;
+  margin: 16px 0 24px;
+  font-size: clamp(15px, 1.8vw, 18px);
+  line-height: 1.55;
+}
+
+.cabecalho-lojas h1,
+.cabecalho-suporte h1,
+.cabecalho-revisao h1,
+.cabecalho-venda h1,
+.cabecalho-promocoes h1,
+.cabecalho-aluguel h1,
+.cabecalho-financiamento h1,
+.cabecalho-comprar h1 {
+  color: var(--branco);
+}
+
+.cabecalho-lojas p:last-child,
+.cabecalho-suporte p:last-child,
+.cabecalho-revisao p:not(.sobretitulo),
+.cabecalho-venda p:last-child,
+.cabecalho-promocoes p:last-child,
+.cabecalho-aluguel p:last-child,
+.cabecalho-financiamento p:last-child,
+.cabecalho-comprar p:last-child {
+  max-width: 620px;
+  line-height: 1.55;
+}
+
+.botao-principal,
+.botao-loja,
+.botao-promocao,
+.botao-aluguel,
+.botao-revisao,
+.botao-formulario {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  color: var(--branco);
+  background: var(--azul-escuro);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao-principal,
+.botao-revisao {
+  color: var(--azul-escuro);
+  background: var(--branco);
+}
+
+.botao-principal:hover,
+.botao-revisao:hover,
+.botao-loja:hover,
+.botao-promocao:hover,
+.botao-aluguel:hover,
+.botao-formulario:hover {
+  background: var(--azul);
+  transform: translateY(-1px);
+}
+
+.titulo-secao {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.link-simples {
+  color: var(--azul);
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.link-simples:hover {
+  text-decoration: underline;
+}
+
+.imagens {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(220px, 1fr);
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+}
+
+.imagens a {
+  overflow: hidden;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--branco);
+  text-align: center;
+  text-decoration: none;
+  scroll-snap-align: start;
+}
+
+.imagens img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  object-position: center;
+  background: #eef3fa;
+  transition: 0.25s;
+}
+
+.imagens a:hover img {
+  transform: scale(1.03);
+}
+
+.imagens a span {
+  display: block;
+  padding: 12px;
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cartoes-servicos,
+.tabela-comparativa,
+.area-midia {
+  margin: 42px 0;
+}
+
+.grade-cartoes-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.cartao-servico {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--branco);
+  box-shadow: 0 8px 24px rgba(15, 42, 87, 0.08);
+}
+
+.cartao-servico img {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #eef3fa;
+}
+
+.cartao-servico h3 {
+  margin: 8px 0;
+}
+
+.cartao-servico p {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.tabela-responsiva {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--branco);
+}
+
+.tabela-responsiva table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+}
+
+.tabela-responsiva caption {
+  padding: 14px;
+  color: var(--azul-escuro);
+  font-weight: bold;
+  text-align: left;
+}
+
+.tabela-responsiva th,
+.tabela-responsiva td {
+  padding: 14px;
+  border: 1px solid var(--borda);
+  text-align: left;
+}
+
+.tabela-responsiva thead th {
+  color: var(--branco);
+  background: var(--azul-escuro);
+}
+
+.tabela-responsiva tbody tr:nth-child(even) {
+  background: #f7faff;
+}
+
+.grade-midia {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.reprodutor-midia {
+  padding: 18px;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--branco);
+}
+
+.reprodutor-midia h3 {
+  margin-top: 0;
+}
+
+.reprodutor-midia video,
+.reprodutor-midia audio {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.lista-carros,
+.lista-lojas,
+.grade-suporte,
+.lista-promocoes,
+.lista-aluguel,
+.grade-carros-financiamento,
+.grade-tipos-financiamento,
+.grade-itens-revisao {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.carro,
+.cartao-loja,
+.card-suporte,
+.card-promocao,
+.card-aluguel,
+.card-carro-financiamento,
+.bloco-formulario-venda,
+.resumo-revisao,
+.agendamento-revisao,
+.bloco-suporte,
+.contato-suporte,
+.informacoes-aluguel,
+.solicitacao-aluguel,
+.simulador-financiamento {
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--branco);
+  box-shadow: 0 8px 24px rgba(15, 42, 87, 0.08);
+}
+
+.carro summary {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.carro summary::-webkit-details-marker {
+  display: none;
+}
+
+.carro summary img {
+  width: 100%;
+  height: 190px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #eef3fa;
+}
+
+.carro summary h2,
+.carro summary h3 {
+  margin: 4px 0;
+}
+
+.clique-detalhes {
+  margin-top: 8px;
+  color: var(--azul);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.descricao-carro {
+  padding: 0 16px 16px;
+  line-height: 1.5;
+}
+
+.descricao-carro strong {
+  color: var(--azul-escuro);
+}
+
+.aviso-comprar,
+.observacao-aluguel,
+.aviso-financiamento {
+  padding: 16px 18px;
+  border-left: 4px solid var(--azul);
+  border-radius: 8px;
+  color: #475569;
+  background: var(--azul-claro);
+}
+
+.lista-lojas {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.cartao-loja,
+.bloco-suporte,
+.contato-suporte,
+.resumo-revisao,
+.agendamento-revisao,
+.informacoes-aluguel,
+.solicitacao-aluguel,
+.bloco-formulario-venda,
+.simulador-financiamento {
+  padding: 24px;
+}
+
+.cabecalho-cartao-loja {
+  margin-bottom: 16px;
+}
+
+.cabecalho-cartao-loja .sobretitulo {
+  margin-bottom: 4px;
+}
+
+.cabecalho-cartao-loja h2,
+.card-promocao h2,
+.card-aluguel h2,
+.card-suporte strong {
+  margin: 0;
+  color: var(--azul-escuro);
+}
+
+.informacao-loja,
+.descricao-loja {
+  color: #475569;
+  line-height: 1.5;
+}
+
+.carros-da-loja {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.carros-da-loja a {
+  overflow: hidden;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: #fbfdff;
+  text-decoration: none;
+}
+
+.carros-da-loja img {
+  height: 92px;
+  object-fit: cover;
+}
+
+.carros-da-loja span {
+  display: block;
+  padding: 8px;
+  color: var(--texto);
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.selo-loja {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 5px 9px;
+  border-radius: 20px;
+  color: #166534;
+  background: #dcfce7;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.grade-suporte {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 24px 0;
+}
+
+.card-suporte {
+  display: flex;
+  min-height: 130px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.card-suporte:hover {
+  border-color: var(--azul);
+  transform: translateY(-3px);
+}
+
+.card-suporte > span:last-child {
+  color: var(--azul);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.formulario-suporte,
+.formulario-venda,
+.formulario-aluguel,
+.formulario-financiamento,
+.formulario-revisao,
+.cartao-autenticacao form {
+  display: grid;
+  gap: 16px;
+}
+
+.formulario-contato {
+  display: grid;
+  gap: 12px;
+}
+
+.formulario-contato .botao-formulario {
+  margin-top: 8px;
+}
+
+.linha-formulario {
+  display: grid;
+  gap: 12px;
+}
+
+.linha-formulario .botao-formulario {
+  justify-self: start;
+  margin-top: 8px;
+}
+
+.formulario-suporte input,
+.formulario-suporte textarea,
+.formulario-venda input,
+.formulario-venda select,
+.formulario-venda textarea,
+.formulario-aluguel input,
+.formulario-aluguel select,
+.formulario-financiamento input,
+.formulario-financiamento select,
+.formulario-revisao input,
+.formulario-revisao select,
+.formulario-revisao textarea,
+.cartao-autenticacao input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #b9c7da;
+  border-radius: 8px;
+  color: var(--texto);
+  background: var(--branco);
+}
+
+.cartao-autenticacao {
+  max-width: 520px;
+  margin: 56px auto;
+  padding: clamp(24px, 5vw, 38px);
+  border: 1px solid var(--borda);
+  border-radius: 14px;
+  background: var(--branco);
+  box-shadow: 0 14px 34px rgba(15, 42, 87, 0.12);
+}
+
+.campo-formulario {
+  display: grid;
+  gap: 7px;
+}
+
+.opcoes-login,
+.termo-venda,
+.lembrar-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.lembrar-me {
+  justify-content: flex-start;
+}
+
+.opcoes-login input,
+.termo-venda input,
+.lembrar-me input {
+  width: auto;
+  min-height: auto;
+}
+
+.separador {
+  margin: 20px 0;
+  text-align: center;
+  border-top: 1px solid var(--borda);
+}
+
+.separador span {
+  position: relative;
+  top: -12px;
+  padding: 0 10px;
+  background: var(--branco);
+}
+
+.mensagem-formulario {
+  min-height: 20px;
+  color: #166534;
+  font-weight: bold;
+}
+
+.lista-promocoes {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.aviso-promocoes {
+  margin-top: 40px;
+}
+
+.card-promocao,
+.card-aluguel {
+  overflow: hidden;
+}
+
+.card-promocao {
+  padding: 18px;
+}
+
+.card-promocao img,
+.card-aluguel > img {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #eef3fa;
+}
+
+.preco-promocao,
+.preco-aluguel {
+  color: var(--vermelho);
+  font-size: 18px;
+}
+
+.card-aluguel {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-card-aluguel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 18px;
+}
+
+.tipo-aluguel {
+  color: var(--azul);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.detalhes-aluguel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  list-style: none;
+}
+
+.detalhes-aluguel li {
+  padding: 5px 8px;
+  border-radius: 20px;
+  background: var(--azul-claro);
+  font-size: 12px;
+}
+
+.botao-aluguel {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.passos-aluguel,
+.grade-campos-venda,
+.campos-simulador,
+.datas-aluguel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.passos-aluguel {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 24px 0;
+}
+
+.solicitacao-aluguel {
+  margin-top: 40px;
+}
+
+.informacoes-aluguel {
+  margin-top: 40px;
+}
+
+.passos-aluguel div {
+  display: grid;
+  gap: 5px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--fundo);
+}
+
+.passos-aluguel div > span,
+.grade-itens-revisao article > span,
+.grade-tipos-financiamento article > span {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--branco);
+  background: var(--azul);
+  font-weight: bold;
+}
+
+.grade-campos-venda {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.campo-venda,
+.campo-largo-venda {
+  display: grid;
+  gap: 7px;
+}
+
+.campo-largo-venda {
+  grid-column: 1 / -1;
+}
+
+.area-upload {
+  display: grid;
+  min-height: 150px;
+  place-content: center;
+  gap: 6px;
+  border: 2px dashed #abc0dc;
+  border-radius: 10px;
+  background: #fbfdff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input-fotos {
+  display: none;
+}
+
+.preview-fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.preview-fotos img {
+  width: 100%;
+  height: 110px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.lista-requisitos {
+  display: grid;
+  gap: 12px;
+  padding-left: 20px;
+}
+
+.grade-itens-revisao article,
+.grade-tipos-financiamento article,
+.card-carro-financiamento {
+  padding: 20px;
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  background: var(--branco);
+}
+
+.grade-itens-revisao article {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  justify-items: center;
+}
+
+.simulador-financiamento {
+  margin-top: 40px;
+}
+
+.agendamento-revisao {
+  margin-top: 40px;
+}
+
+.grade-tipos-financiamento article {
+  display: grid;
+  gap: 8px;
+}
+
+.grade-tipos-financiamento strong {
+  color: var(--azul);
+}
+
+.grade-carros-financiamento {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 28px;
+}
+
+.card-carro-financiamento img {
+  height: 140px;
+  margin: 0 auto 10px;
+  object-fit: contain;
+}
+
+.card-carro-financiamento h3,
+.card-carro-financiamento p {
+  margin: 6px 0;
+  text-align: center;
+}
+
+.tipos-financiamento,
+.como-funciona-financiamento,
+.informacoes-complementares,
+.duvidas-revisao,
+.itens-revisao,
+.lista-requisitos-revisao {
+  margin-top: 28px;
+}
+
+.resultado-financiamento {
+  display: grid;
+  gap: 8px;
+  margin-top: 4px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--azul-claro);
+  text-align: center;
+}
+
+.resultado-financiamento strong {
+  color: var(--azul-escuro);
+  font-size: 20px;
+}
+
+.duvidas-revisao details,
+.bloco-suporte details {
+  margin-top: 10px;
+  padding: 14px;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: var(--branco);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 24px clamp(18px, 4vw, 64px);
+  color: var(--branco);
+  background: var(--azul-escuro);
+}
+
+footer span:first-child {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .grade-cartoes-servicos,
+  .grade-midia {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lista-carros,
+  .lista-lojas,
+  .grade-suporte,
+  .lista-promocoes,
+  .lista-aluguel,
+  .grade-carros-financiamento,
+  .grade-tipos-financiamento,
+  .grade-itens-revisao {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    padding-inline: 16px;
+  }
+
+  .grade-cartoes-servicos,
+  .grade-midia {
+    grid-template-columns: 1fr;
+  }
+
+  .cabecalho {
+    padding-inline: 12px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    padding: 7px;
+    font-size: 9px;
+  }
+
+  .titulo-secao,
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .lista-carros,
+  .lista-lojas,
+  .grade-suporte,
+  .lista-promocoes,
+  .lista-aluguel,
+  .grade-carros-financiamento,
+  .grade-tipos-financiamento,
+  .grade-itens-revisao,
+  .passos-aluguel,
+  .grade-campos-venda,
+  .campos-simulador,
+  .datas-aluguel {
+    grid-template-columns: 1fr;
+  }
+
+  .apresentacao,
+  .cabecalho-lojas,
+  .cabecalho-suporte,
+  .cabecalho-revisao,
+  .cabecalho-venda,
+  .cabecalho-promocoes,
+  .cabecalho-aluguel,
+  .cabecalho-financiamento,
+  .cabecalho-comprar {
+    margin-top: 18px;
+    padding: 24px 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .preview-fotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

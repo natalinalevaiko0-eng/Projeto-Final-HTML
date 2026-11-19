@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Abrir index.html",
+            "file": "c:\\Users\\natal\\OneDrive\\Documentos\\Trabalho-html-site-de-carro--main\\index.html"
+        }
+    ]
+}

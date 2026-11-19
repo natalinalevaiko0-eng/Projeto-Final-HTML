@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Preview Carro Fácil",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"http.server",
+				"5500",
+				"--bind",
+				"127.0.0.1"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
